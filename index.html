@@ -8,41 +8,15 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    transition: 0.5s;
-    background: #f0f4f8;
-}
-
-.dark {
-    background: #121212;
-    color: white;
+    font-family: Arial;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
 }
 
 header {
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    background: #1565c0;
     color: white;
     text-align: center;
-    padding: 30px;
-}
-
-nav {
-    text-align: center;
-    background: #333;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-button {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 20px;
 }
 
 .container {
@@ -51,36 +25,15 @@ button {
 
 .card {
     background: white;
-    margin: 20px 0;
     padding: 20px;
-    border-radius: 15px;
-    transition: transform 0.3s;
-}
-
-.dark .card {
-    background: #1e1e1e;
-}
-
-.card:hover {
-    transform: scale(1.03);
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 img {
     width: 250px;
     border-radius: 10px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e3c72;
-    color: white;
+    margin: 10px;
 }
 </style>
 </head>
@@ -89,62 +42,32 @@ footer {
 
 <header>
 <h1>Marie Curie</h1>
-<p>Uma das maiores cientistas da história</p>
-<button onclick="modoEscuro()">🌙 Modo Escuro</button>
+<p>Cientista que revolucionou o mundo</p>
 </header>
-
-<nav>
-<a href="#bio">Biografia</a>
-<a href="#fotos">Fotos</a>
-<a href="#filmes">Filmes</a>
-<a href="#livros">Livros</a>
-</nav>
 
 <div class="container">
 
-<div id="bio" class="card">
+<div class="card">
 <h2>Biografia</h2>
-<p>Marie Curie foi uma cientista pioneira nos estudos da radioatividade. 
-Ela ganhou dois prêmios Nobel e revolucionou a ciência.</p>
+<p>Marie Curie foi uma cientista pioneira no estudo da radioatividade e a primeira pessoa a ganhar dois prêmios Nobel.</p>
 </div>
 
-<div id="fotos" class="card">
+<div class="card">
 <h2>Fotos</h2>
-<div class="gallery">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Marie_Curie_c1920.jpg">
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_1903.jpg">
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Marie_Curie_in_her_lab.jpg">
 </div>
-</div>
 
-<div id="filmes" class="card">
+<div class="card">
 <h2>Filmes</h2>
 <ul>
 <li>Radioactive (2019)</li>
-<li>Marie Curie: The Courage of Knowledge</li>
 <li>Madame Curie (1943)</li>
 </ul>
 </div>
 
-<div id="livros" class="card">
-<h2>Livros</h2>
-<ul>
-<li>Traité de Radioactivité</li>
-<li>Recherches sur les Substances Radioactives</li>
-</ul>
 </div>
-
-</div>
-
-<footer>
-<p>Site sobre Marie Curie</p>
-</footer>
-
-<script>
-function modoEscuro() {
-    document.body.classList.toggle("dark");
-}
-</script>
 
 </body>
 </html>
